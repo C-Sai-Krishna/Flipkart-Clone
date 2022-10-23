@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Online Shopping Site fir Mobiles,Accessories and more</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /* font-size: 12px; */
+        
+    }
+    body{
+        width: 100%;
+        max-width: 1520px;
+        margin: 0px auto;
+        /* font-family: 'Poppins', sans-serif; */
+        font-family: Roboto,Arial,sans-serif;
+    }
+    nav{
+        background-color: #f8ecec6b;
+
+        height: 148px;
+    }
+    
+    ul {display: flex;
+        /* background-color: rgb(50, 203, 96); */
+        margin:0px 55px
+        
+
+    }
+    main{
+        height: 1900px;
+    }
+    li{
+         list-style-type:none ;
+         /* background-color: rgb(232, 245, 136); */
+         margin: 0 auto;
+
+    }
+     li a{
+        text-decoration: none;
+        color: black;
+    }
+     header{
+        display: flex;
+        background-color: #2874f0;
+        max-height: 65px;
+        justify-content: center;
+        align-items: center;
+    }
+     header img{
+        width: 55px;
+        height:45px;
+        margin-left: 22px;
+
+    }
+.h1 img {
+margin-right: 12px;
+width: 103px;
+height: 53px;
+}
+.h2{
+    margin: 3px;
+    width: 329px;
+height: 33px;
+}
+/* .h2 label{
+    width: 268.667px;
+height: 30px;
+margin-right: 7px;
+} */
+.h2 input {
+    width: 268.667px;
+height: 30px;
+margin-right: 7px;
+}
+.h3{
+    position: relative;
+    margin: 12px;
+    display: block;
+    
+}
+.h3 button{
+    height: 27px;
+border-radius: 4px;
+width: 110px;
+border-color: none;
+color: #2874f0;
+font-size: medium;
+background-color: #fff;
+}
+.h3content{
+    float: left;
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 290px;
+  box-shadow: 0px 32px 32px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.h3content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+.h3content a:hover {background-color: #a8cef421;
+color: #2874f0;}
+
+.h3:hover .h3content {
+  display: block;
+}
+.h3:hover  button{
+  background-color: #f9fafb;
+}
+.h3content img{
+width: 28px;
+height: 25px;
+margin-left: 2px;
+}
+#h11{
+    position: relative;
+    margin: 12px;
+    display: block;
+    
+}
+
+.h11content{
+    /* float: right; */
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 265px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.h11content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+#h11:hover .h11content {
+  display: block;
+}
+.h11content a:hover {
+background-color: #a8cef421;
+color: #2874f0;}
+
+
+
+.h11content a{
+  position: relative;
+}
+.h11content1{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 265px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+left:265px
+}
+
+.h11content1 a {
+
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display:block;
+}
+.h11content:hover .h11content1 {
+display: block;
+}
+.h11content1 a:hover {
+background-color: #a8cef421;
+color: #2874f0;
+}
+/**/
+/*  */
+.h11content a:nth-child(3) {
+  position: relative;
+}
+.h11content2{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 265px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+left:265px
+}
+
+.h11content2 a {
+
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display:block;
+}
+.h11content a:nth-child(3):hover .h11content2 {
+display: block;
+}
+.h11content2 a:hover {
+background-color: #a8cef421;
+color: #2874f0;
+}
+/*  */
+
+
+
+
+
+.h11{
+    /* background-color: rgb(240, 173, 173); */
+    flex: 1;
+    height: 86px;
+    /* justify-content: center; */
+}
+.h11img img{
+    /* background-color: rgb(0, 67, 212); */
+    height:72px;
+    width: 100%;
+
+        }
+.imgtag{
+    /* background-color: rgba(249, 156, 156, 0.47); */
+justify-content: center;
+}
+article .art{
+    background-color: rgb(220, 47, 205);
+    max-width: 4000px;
+    width:100%;
+    height: 731px;
+    /* margin: 10px auto 100px; */
+
+}
+.art img{width: 100%;
+    height:178px;
+}
+.art5 img{width:100%}
+/* @keyframes animation {
+0%{transform: translateX(0%);
+  }
+100%{
+    transform: translateX(100%);
+}
+}
+@keyframes  animation1{
+    
+    0%{visibility: hidden;
+      }
+    10%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    
+    }
+} */
+article {
+    display: flex;
+    max-width: 4000px;
+    max-height: 900px;
+    height: 741px;
+    /* flex: 1; */
+}
+.h4{
+    color:   white;
+    margin-right: 5px;
+}
+.h5{
+    color:   white;
+    margin-left:15px ;
+}
+.h5 img{
+    width:19px;
+    height:16px;
+    color: white;
+    background-color: #fff;
+}
+.h6{
+    color:   white;
+}
+.h6 img{ margin-right: 7px;
+    width:22px;
+    height: 29px;
+    background-color: #fff;
+}
+.art1 img:nth-child(1){
+    animation: animation 2s ease-in-out 1s forwards;
+}
+.art1{
+    margin: auto;
+  padding: 0;
+  max-width: 739px;
+
+}
+.downarrow img{
+    width:12px;
+    height:12px;
+}
+.art2 img{
+    animation: animation1 4s ease-in-out 1s forwards ;
+}
+/* .art{
+    animation-name: animation;
+} */
+
+/* li:nth-child(3){
+    position: relative;   
+    display: inline-block;
+}
+.dropdowncontent{
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+}
+li:nth-child(3):hover  .dropdowncontent{
+  display: block;
+
+}
+.h3content img{
+    width: 15%;
+    height:25px
+} */
+#h12{
+    position: relative;
+    display: block;
+    margin: 12px;
+}
+.h12content{
+    position: absolute;
+    display: none;
+    width: 333px;
+    background-color: #fff;
+    z-index: 1;
+
+}
+.h12content a{
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+#h12:hover .h12content{
+    display: block;
+}
+.h12content a:hover{
+    background-color: #a8cef42f;
+    color: #2874f0;
+    /* display: block; */
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="h1"><a href=""><img src="imgs/Screenshot (2207).png" alt=""></a>
+            
+        </div>
+        <div class="h2">
+            <label for="search"></label>
+            <input type="search" name="Search" id="search" placeholder="Search for products ,brands and more"> 
+        </div>
+        <div class="h3">
+            <button>Login</button>
+            <div class="h3content">
+                <a href=""><img src="imgs/Screenshot (2211).png"alt="">New customer?     Sign Up</a>
+                <a href=""><img src="imgs/Screenshot (2212).png"alt="">Flipkart Plus Zone</a>
+                <a href=""><img src="imgs/Screenshot (2214).png"alt="">Orders</a>
+                <a href=""><img src="imgs/Screenshot (2215).png"alt="">Wishlist</a>
+                <a href=""><img src="imgs/Screenshot (2216).png"alt="">Rewards</a>
+                <a href=""><img src="imgs/Screenshot (2217).png"alt="">Giftcards</a>
+            </div>
+        </div>
+        <div class="h4">Become a Seller</div>
+        <div class="h5">More</div>
+        <div class="h6"><a href=""><img src="imgs/Screenshot (2209).png" alt=""></a></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href=""><div class="h11">
+                    <div class="h11img"><img src="imgs/1.webp" alt=""></div></div>
+                    <div class="imgtag">
+                        Top <br>offers
+                    </div></a>
+                
+            </li>
+            <li><a href=""><div class="h11">
+                    <div class="h11img"><img src="imgs/2.webp" alt=""></div></div>
+                    <div class="imgtag">
+                        Mobiles & <br>Tablets
+                    </div></a>
+                
+            </li>
+            <li>
+                <!-- <a href=""> -->
+                <a href=""><div class="h11">
+                    <div id="h11">
+                    
+                    <div class="h11img">
+                        <img src="imgs/3.webp" alt="">
+                    </div>
+                    <div class="imgtag">
+                        Electronics
+                    </div>
+                    <div class="downarrow">
+                        <img src="imgs/down-arrow.png" alt="">
+                    </div>
+                <div class="h11content">
+                    <a href="">Audio
+                        <div class="h11content1">MORE IN AUDIO
+                            <a href="">All</a>
+                            <a href="">Bluetooth Headphones</a>
+                            <a href="">Wired Headphones</a>
+                            <a href="">True Wireless Earbuds</a>
+                            <a href="">Bluetooth Speakers</a>
+                            <a href="">SoundBars</a>
+                            <a href="">Home Theatres</a>
+                            <a href="">TV Streaming Devices</a>
+                            <a href="">Remote Control</a>
+                            <a href="">DTH Set top box</a>
+                            <a href="">Headphones Pouch & Case <br>Covers</a>
+                        </div>
+                    </a>
+                    <a href="">Electronics GST Store </a>
+                    <a href="">Cameras & Accessories
+                        <div class="h11content2">MORE IN CAMARAS & ACCESSORIES
+                            <a href="">All</a>
+                            <a href="">DSLR & Mirrorless</a>
+                            <a href="">Sports & action</a>
+                            <a href="">Point & Shoot</a>
+                            <a href="">Instant Cameras</a>
+                            <a href="">Camcorders</a>
+                            <a href="">Camera tripods</a>
+                            <a href="">Camera Lenses</a>
+                            <a href="">Drone</a>
+                            <a href="">Flashes</a>
+                            <a href="">Gimbals</a>
+                            <a href="">Binoculars</a>
+                            <a href="">Other Camera Accesories</a>
+                        </div>
+                    </a>
+                    <a href="">Computer Peripherals</a>
+                    <a href="">Gaming</a>
+                    <a href="">Health & Personal Care</a>
+                    <a href="">Laptop Accessories</a>
+                    <a href="">Laptop and Desktop</a>
+                    <a href="">Mobiles</a>
+                    <a href="">Powerbank</a>
+                    <a href="">Smart Home automation</a>
+                    <a href="">Smart Wearables</a>
+                    <a href="">Storage</a>
+                </div>
+                </div>
+                </div></a>
+                <!-- </a> -->
+            </li>
+            <li><a href=""><div class="h11">
+                <div id="h12">
+                    <div class="h11img">
+                        <img src="imgs/4.webp" alt="">
+                    </div>
+                <div class="imgtag">
+                    TVs &</div><div class="downarrow">
+                        <img src="imgs/down-arrow.png" alt=""></a>
+                       
+                </div>
+                <div class="h12content">
+                    <a href="">Home Furnishings</a>
+                    <a href="">Furniture Studio</a>
+                    <a href="">Living Room Furniture</a>
+                    <a href="">kitchen & Dining</a>
+                    <a href="">Bedroom Furniture</a>
+                    <a href="">Home Decor</a>
+                    <a href="">Tools & Utility</a>
+                    <a href="">Work Space Furniture</a>
+                    <a href="">Lightnings & Electricals</a>
+                    <a href="">Space Savings Furniture</a>
+                    <a href="">Kids Furniture</a>
+                    <a href="">Pet & Gardening</a>
+                </div>
+                </div>
+                </div>
+                
+                
+            </li>
+            <li><a href=""><div class="h11">
+                    <div class="h11img"><img src="imgs/5.webp" alt=""></div></div>
+                    <div class="imgtag">
+                        Fashion
+                    </div></a>
+                
+            </li>
+            <li><a href=""><div class="h11">
+                    <div class="h11img"><img src="imgs/6.webp" alt=""></div></div>
+                    <div class="imgtag">
+                        Beauty
+                    </div></a>
+                
+            </li>
+            <li><a href=""><div class="h11">
+                <div id="h12">
+                    <div class="h11img"><img src="imgs/7.webp" alt=""></div></div>
+                    <div class="imgtag">
+                        Home &<br>Furniture
+                    </div></div></a>
+                
+            </li>
+            <li><a href=""><div class="h11">
+                    <div class="h11img"><img src="imgs/8.webp" alt=""></div></div>
+                    <div class="imgtag">
+                        FK <br>Originals</div></a>
+                        
+                        
+                    </li>
+                    <li><a href=""><div class="h11">
+                        <div class="h11img"><img src="imgs/9.webp" alt=""></div></div>
+                        <div class="imgtag">
+                            Flights & <br>Hotels
+                        </div></a>
+                        
+                    </li>
+                    <li><a href=""><div class="h11">
+                        <div class="h11img"><img src="imgs/10.webp" alt=""></div></div>
+                        <div class="imgtag">
+                            Groceries
+                        </div></a>
+                        
+                    </li>
+                </ul>
+            </nav>
+    <main>
+        <article>
+            <div class="art">
+                <div class="art1"><a href=""><img src="imgs/Screenshot (2199).png" alt=""></a></div>
+                <div class="art2"><a href=""><img src="imgs/Screenshot (2198).png" alt=""></a></div>
+                <div class="art3"><a href=""><img src="imgs/Screenshot (2197).png" alt=""></a></div>
+                <div class="art4"><a href=""><img src="imgs/Screenshot (2196).png" alt=""></a></div>
+            </div>
+            
+        </article>
+        <div class="art5">
+            <img src="imgs/Screenshot (2203).png" alt="">
+        </div>
+        <article class="article2">
+            <div class="arti21"><img src="imgs/Screenshot (2204).png" alt="">
+
+            </div>
+            
+            <div class="arti21"><img src="imgs/Screenshot (2205).png" alt="">
+
+            </div>
+            
+            <div class="arti21"><img src="imgs/Screenshot (2206).png" alt="">
+
+            </div>
+            <style>
+                /* .art5::after() */
+                .article2{
+                    display: flex;
+                    flex: 1;
+                }
+                .arti21{
+                    width:33%;
+                    margin:0 auto;
+                    padding: 5px;
+                }
+                .arti21 img{
+                    width: 100%;
+                }
+            </style>
+
+        </article>
+
+
+
+
+    </main>
+   
+</body>
+</html>
+
+
